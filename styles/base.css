@@ -1,0 +1,138 @@
+
+:root {
+    /* --width: 60vw;
+    --height: 100vh; */
+    --font: 'Source Code Pro', monospace;
+    --box-color: #ba951d;
+}
+
+body {
+    max-width: var(--width);
+    margin: auto;
+    font-family: var(--font)
+}
+main {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+header {
+    background-color: var(--box-color);
+    /* align-self: center; */
+    display: grid;
+    grid-template-rows: auto auto;
+    border: .5rem solid var(--box-color);
+    text-align: center;
+    /* border-radius: 2rem / 2rem; */
+    /* box-shadow: 0rem 0rem 5rem rgb(193, 184, 22); */
+}
+img {
+    max-width: 15vw;
+    max-height: 30vh;
+    justify-self: center;
+    margin: 1.5vw;
+    /* box-shadow: 0rem 0rem 3rem black; */
+}
+h1 {
+    font-size: 3.5vw;
+    align-self: center;
+    font-weight:900;
+    color: rgb(14, 10, 10);
+}
+h2 {
+    font-size: 6vw;
+    font-weight:800;
+    text-shadow: none;
+}
+ul {
+    font-size: 3vw;
+}
+nav {
+	background-color: #36454f;
+	margin-top: -2%;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav li {
+    margin: 1vh 0px 1vh 2vw;
+    font-weight: 600;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+li {
+    margin: 1vh 0px 1vh 3vw;
+    font-weight: 600;
+    list-style: none;
+}
+
+nav ul{
+    padding-inline-start: 0px;
+    margin-inline-end: 30px;
+
+}
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: .5rem;
+    color: #fff;
+}
+nav a:hover {
+    background-color: rgba(255,255,255,0.2);
+    border: 1px solid #fff;
+}
+footer {
+    background-color: var(--box-color);
+    display: grid;
+    text-align: center;
+    grid-template-columns: auto;
+    border: .5rem solid var(--box-color);
+    /* border-radius: 2rem / 2rem; */
+    /* box-shadow: 0rem 0rem 5rem black; */
+    font-weight: 700;
+    font-size: 2.5vw;
+    color: rgb(18, 17, 17);
+}
+p:last-child {
+    color: rgb(36, 36, 23);
+}
+
+.title h2{
+    text-align: justify;
+    padding-left: 2%;
+    font-size: 1.2rem;
+    font-weight:800;
+    text-shadow: none;
+}
+
+.grid-container {
+    display: grid;
+    column-gap: 50px;
+    row-gap: 50px;
+    grid-template-columns: auto ;
+    padding: 10px;
+  }
+
+  .card{
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 30px;
+    border-radius: 5px;
+    box-shadow: 0rem 0rem .5rem rgb(36, 34, 34);
+    margin-bottom: 10px;
+  }
+
+  .cardtitle{
+    background-color: rgb(26, 77, 158);
+    color: azure;
+    text-align: center;
+    /* margin-top: -4%; */
+  }
+
+  .cardtitle h2{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight:800;
+    text-shadow: none;
+    margin: 0;
+  }
