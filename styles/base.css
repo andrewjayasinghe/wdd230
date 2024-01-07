@@ -1,13 +1,10 @@
 
 :root {
-    /* --width: 60vw;
-    --height: 100vh; */
+
     --font: 'Source Code Pro', monospace;
-    --box-color: #ba951d;
 }
 
 body {
-    max-width: 80vw;
     margin: auto;
     font-family: 'Source Code Pro', monospace;
 }
@@ -17,11 +14,11 @@ main {
 }
 
 header {
-    background-color: var(--box-color);
+    background-color: #ba951d;
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr; 
-    border: .5rem solid var(--box-color);
+    border: .5rem solid #ba951d;
 }
 
 
@@ -87,11 +84,11 @@ nav a:hover {
     border: 1px solid #fff;
 }
 footer {
-    background-color: var(--box-color);
+    background-color: #ba951d;
     display: grid;
     text-align: center;
     grid-template-columns: auto;
-    border: .5rem solid var(--box-color);
+    border: .5rem solid #ba951d;
     font-weight: 700;
     font-size: 2.5vw;
     color: rgb(18, 17, 17);
