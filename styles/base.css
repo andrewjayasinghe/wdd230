@@ -9,8 +9,9 @@ body {
     font-family: 'Source Code Pro', monospace;
 }
 main {
-	max-width: 1400px;
+	max-width: 100%;
 	margin: 0 auto;
+    
 }
 
 header {
@@ -182,4 +183,13 @@ p:last-child {
 }
 .open li a {
 	display: block;
+}
+
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
 }

@@ -15,3 +15,21 @@ hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
 	hamButton.classList.toggle('open');
 });
+
+const modeButton = document.querySelector("#mode");
+const main = document.querySelector("main");
+const titlename = document.querySelector("#title");
+
+modeButton.addEventListener("click", () => {
+	if (modeButton.textContent.includes("🕶️")) {
+		main.style.background = "#000";
+		main.style.color = "#fff";
+		modeButton.textContent = "🔆";
+        titlename.style.color = "#fff"
+	} else {
+		main.style.background = "#eee";
+		main.style.color = "#000";
+        titlename.style.color = "#000"
+		modeButton.textContent = "🕶️";
+	}
+});
