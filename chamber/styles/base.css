@@ -211,7 +211,7 @@ section {
     position: absolute;
     padding: 15px;
     font-size: 2em;
-    color: 162a35;
+    color: #162a35;
     text-shadow: 1px 0px 1px var(--primary-color);
 }
 main .hero button {
