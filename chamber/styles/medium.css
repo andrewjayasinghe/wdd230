@@ -1,0 +1,281 @@
+@media only screen and (min-width: 32.5em){
+    footer {
+        display: grid;
+        grid-template-columns: 28% 36% auto;
+        grid-template-rows: 60% 40%;
+    }
+    footer a, .footer_chamber_info, .contact_info {
+        grid-row: 1;
+    }
+    footer a {
+        display:block;
+        width: 100%;
+        margin: auto .4em;
+    }
+    .footer_chamber_info {
+        grid-column: 2;
+        text-align: left;
+        margin: auto 1vw auto 2vw;
+    }
+    .footer_chamber_info span {
+        text-align: left;
+        font-size: 1em;
+    }
+    .footer_chamber_info div {
+        font-size: .8em;
+    }
+    .contact_info {
+        grid-column: 3;
+        margin: auto;
+        font-size: 18px;
+    }
+    .contact_info p {
+        margin: 0;
+    }
+    .bottom_of_footer, .footer_date {
+        grid-column: 1/4;
+    }
+    .bottom_of_footer {
+        grid-row: 2;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+        margin: .5em 0px .5em 0px;
+    }
+    .bottom_of_footer hr {
+        grid-row:1;
+    }
+    .bottom_of_footer .footer_info {
+        grid-row:2;
+        font-size: .75em;
+    }
+    .bottom_of_footer .footer_date {
+        grid-row: 3;
+        font-size: .75em;
+    }
+    
+    .line {
+        display: inline-block;
+        visibility: visible;
+        font-size: 1em;
+    }
+    header {
+        display: grid;
+        width: 100%;
+        grid-template-columns: auto auto auto 17%;
+        grid-template-rows: auto auto auto;
+    }
+    .header-logo {
+        grid-column: 2;
+        width: max(12px, 15px);
+        margin: .3em auto .3em 1vw;
+    }
+    header div, .social-media {
+        grid-row: 1;
+    }
+    header div {
+        grid-column: 3;
+        color: white;
+        font-size: 24px;
+        margin: auto 0;
+    }
+    header div span {
+        font-size: 16px;
+        font-weight: 900;
+    }
+    .social-media {
+        grid-column: 4;
+    }
+    .navigation li {
+        text-align: left;
+        font-size: 1.2em;
+        margin: 0px;
+    }
+    .navigation {
+        flex-flow:row-reverse;
+        list-style: none;
+        text-align: left;
+        padding: 0;
+        position: relative;
+        left: 5%;
+        bottom: 0%;
+        margin-top:5px;
+    }
+    .navigation li:first-child {
+        display:block;
+        border: 1px solid grey;
+        color: white;
+        font-size: 1.1em;
+        max-width: fit-content;
+        padding: 7px 9px;
+        margin: 0px;
+    }
+    .navigation li:first-child a {
+        margin: auto;
+    }
+    .navigation li a {
+        display:inline-block;
+        text-decoration:none;
+        color: white;
+        margin: 7.5px 5px 0px 0px;
+    }
+    header nav{
+        display: block;
+        grid-column: 1;
+        grid-row: 1/3;
+        margin: 5px 0px 0px 10px;
+    }
+    header time {
+        grid-column: 1/5;
+    }
+    #homepage {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(5, auto);
+    }
+    section {
+        margin: 4px 4px;
+    }
+    .spotlights, #join {
+        margin: 4px 4px;
+    }
+    .spotlights {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
+        grid-row: 3;
+    }
+    #discover_grid {
+        display:flex;
+        flex-direction:column;
+        min-width: 230px;   
+    }
+    .spotlight {
+        width: auto;
+        margin: 2px 2px;
+    }
+    #news {
+        grid-row: 2;
+    }
+    #join {
+        display: block;
+        grid-row: 4;
+    }
+    #weath_event {
+        display: flex;
+        flex-direction: row;
+        grid-row: 5;
+    }
+    #event {
+        width: 60%;
+    }
+    #weather {
+        width: 35%;
+    }
+
+    #demographics {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    /**/
+    #joinpage form button{
+        width:50%;
+        height:2.5rem;
+        margin:auto;
+    }
+    #joinpage form .member-tiers {
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+    }
+    #joinpage form .member-tiers .membership-tier{
+        display:flex;
+        flex-direction:column;
+        margin:auto;
+        border: 1px solid grey;
+    }
+
+    #joinpage form fieldset:nth-child(2) label input{
+        margin:.75em 0;
+        padding:.25em;
+        max-width: 24em;
+    }
+
+    #thankyou_page section p{
+        margin:3.5em 1.5em;
+    }
+
+    .businesses {
+        display: grid;
+        grid-template-columns:repeat(auto-fill, minmax(370px, 2fr));
+        margin:auto;
+    }
+    .list {
+        display:flex;
+        flex-direction:row;
+        text-align: left;
+        justify-content:space-between;
+        margin: 0em;
+        align-items:center;
+    }
+    .list h2{
+        font-size: .8em;
+        margin: 0em;
+        margin-left: .5em;
+    }
+    .list p{
+        margin: 0em;
+    }
+    .list p:last-child{
+        margin-right: .5em;
+    }
+
+    /*contact page*/
+    #contact_page section form fieldset{
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction:row;
+    }
+    #contact_page section form fieldset label {
+        flex-basis:100%;
+    }
+    #contact_page section form fieldset label:nth-of-type(4),
+    #contact_page section form fieldset label:nth-of-type(5) {
+        margin-left: 0;
+        margin-right: 0;
+        flex-basis:49%;
+    }
+    #name, #organization, #maddress {
+        min-width: 18em;
+    }
+    #email,
+    #phonenum {
+        min-width: 10em;
+        width: auto;
+        max-width:100%;
+    }
+    #contact_page section form fieldset label input {
+        flex-basis:64%;
+        min-height:1.5em;
+        width: 50%;
+        max-width:25em;
+    }
+    #contact_page section form label:last-of-type textarea {
+        min-width:25em;
+        max-width:75%;
+    }
+    #contact_page section form label:last-of-type{
+        text-align:left;
+    }
+    #contact_page section form button {
+        margin:auto;
+        min-width:15em;
+        min-height:2em;
+    }
+    #contact_page section form  div label input {
+        min-width:1.25em;
+        min-height:1.25em;
+    }
+
+}

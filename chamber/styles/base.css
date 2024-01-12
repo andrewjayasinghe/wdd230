@@ -1,0 +1,809 @@
+:root {
+    --width: 90vw;
+    --height: 100vh;
+    --font: 'Source Code Pro', monospace;
+
+    --primary-color: #162a35;
+    --secondary-color: #8faddc;
+    --accent1-color: #005b8d;
+    --accent2-color: #01c5f7;
+    --heading-color: #20bcbc;
+    
+    --heading-font: 'Lato', sans-serif;
+    --paragraph-font: 'EB Garamond', serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    font-size: 1em;
+}
+p, span {
+    font-family: var(--paragraph-font);
+}
+
+hr {
+    width: 95%;
+    color: black;
+}
+
+h2 {
+    color: #162a35;
+    text-shadow: 1px 0px 1px var(--primary-color);
+    text-shadow: 0px 0px 1px var(--accent1-color);
+    font-size: 1.4em;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+body {
+    margin: auto;
+    font-family: var(--font);
+    background-color: lightgrey;
+}
+
+
+main {
+    max-width: var(--width);
+    margin:10px auto;
+    padding: 0px;
+}
+
+picture img[data-src]{
+    filter: blur(0.2em);
+}
+
+header {
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto 49% 22% ;
+    grid-template-rows: auto auto auto auto;
+    background-color: var(--primary-color);
+}
+.header-logo {
+    grid-column: 2/3;
+    grid-row: 2;
+    /* width: 200px; */
+    max-width:20vw;
+    justify-self: right;
+    margin: 3px auto;
+}
+.header-logo picture img {
+    width: 100%;
+    margin: auto;
+}
+header div {
+    grid-row: 2;
+    display:inline-block;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 900;
+    margin: auto 0px auto 10px;
+}
+header div span {
+    display:inline-block;
+    font-size: .6em;
+    margin: 0px;
+}
+
+.gales{
+    grid-column: 3;
+    grid-row: 2;
+    margin: auto;
+}
+
+.social-media {
+    grid-column: 3;
+    grid-row: 2;
+    margin: auto;
+    display: none;
+}
+.social-media a {
+    display:inline-block;
+    height: 25px;
+    width: 25px;
+    margin: 0;
+    padding: 0;
+}
+.social-media a img {
+    max-height: 100%;
+    max-width: 100%;
+}
+header nav{
+    grid-column: 1;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    margin: 0px;
+}
+.navigation li:hover{
+    background-color:var(--accent1-color);
+   
+}
+.navigation li:hover a{
+    text-shadow: 1px 0px 1px white;
+    transition: all .1s;
+   
+}
+.social-media a:hover{
+    background-color:var(--accent1-color);
+    border: 0px solid var(--accent1-color);
+    border-radius: .3em;
+    transform:scale(1.1, 1.1);
+    transition:all .2s;
+}
+
+.navigation {
+    flex-flow:row-reverse;
+    vertical-align:middle;
+    list-style: none;
+    text-align: left;
+    padding: 0;
+    position: relative;
+    left: 5%;
+    bottom: 0%;
+    margin-top:5px;
+}
+
+.navigation li:first-child {
+    display:block;
+    border: 1px solid grey;
+    color: white;
+    font-size: 1.1em;
+    max-width: fit-content;
+    padding: 7px 9px;
+}
+.navigation li:first-child a {
+    margin: 0;
+}
+.navigation li {
+    display:none;
+    font-size: 1em;
+    margin: 0px auto;
+    justify-items:center;
+}
+.navigation li a {
+    display:block;
+    text-decoration:none;
+    color: white;
+    margin: 7.5px 25px 7.5px;
+}
+
+.response {
+    padding: 0;
+    margin: 0;
+}
+
+.responsive li {
+    display: block;
+    margin: 0px;
+}
+
+
+header time {
+    width: var(--width);
+    grid-row: 4;
+    grid-column: 1/5;
+    border: 1px solid var(--accent2-color);
+    background-color: var(--accent1-color);
+    color:white;
+    text-align: center;
+    margin: 5px auto;
+    padding: .3rem 0px .3rem 0px
+
+}
+
+section {
+    background-color: var(--secondary-color);
+    padding: 10px 15px;
+    border: 1px solid var(--accent1-color);
+    min-height: 150px;
+    height: auto;
+    margin: 10px 0;
+    text-align:center;
+}
+
+.hero h1 {
+    position: absolute;
+    padding: 15px;
+    font-size: 2em;
+    color: 162a35;
+    text-shadow: 1px 0px 1px var(--primary-color);
+}
+main .hero button {
+    position:absolute;
+    bottom: calc(12%);
+    right: calc(5%);
+    padding: 5px 10px;
+    border: 0px;
+    border-radius: .5em;
+    background-color: var(--primary-color);
+    box-shadow: 0px 2px 16px black;
+    color: white;
+    font-size: 1.8em;
+    text-shadow: 1px 0px 1px white;
+    opacity: .95;
+}
+
+.hero {
+    position: relative;
+    padding: 0px;
+}
+
+.hero picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.spotlights {
+    display:flex;
+    flex-direction:column;
+    min-width: 230px;
+}
+
+.spotlights, #join {
+    background-color: var(--secondary-color);
+    padding: 10px 15px;
+    border: 1px solid var(--accent1-color);
+    min-height: 150px;
+    height: auto;
+    margin: 4px 0;
+    text-align:center;
+}
+
+.spotlight {
+    border: 1px solid var(--accent1-color                                                                 );
+    min-height: 150px;
+    padding: 10px;
+    padding-bottom: 20px;
+    box-shadow: -2px -2px 16px var(--accent1-color), 2px 2px 16px var(--accent1-color);
+}
+.spotlight:last-of-type {
+    display: none;
+}
+.spotlight div, .businesses section img {
+    height: 75px;
+}
+.spotlight div img, .businesses section img {
+    max-height: 100%;
+}
+
+#join {
+    display: none;
+}
+#join button {
+    width: 80%;
+    padding: 5px 0px;
+    border: 0px;
+    border-radius: .5em;
+    background-color: var(--primary-color);
+    box-shadow: 0px 2px 16px black;
+    color: white;
+    font-size: 1.4em;
+    text-shadow: 1px 0px 1px white;
+    opacity: .95;
+}
+
+#weather {
+    display: grid;
+    grid-template-columns: 33% 67%;
+    grid-template-rows: auto auto auto auto;
+}
+#weather h2 {
+    grid-row: 1;
+    grid-column: 1/3;
+}
+#weather picture {
+    grid-row: 2;
+    grid-column: 1;
+}
+#weather picture img {
+    width: 100%;
+    max-width: 100px;
+    object-fit: cover;
+}
+.weather_info {
+    display: flex;
+    flex-direction: column;
+    grid-row: 2;
+    grid-column: 2;
+    color: #162a35;
+}
+.weather_info span:first-child {
+    font-size: 2em;
+    margin: auto;
+}
+.weather_info span:last-child {
+    font-size: 2em;
+    /* text-shadow: 1px 0px .75px white; */
+
+}
+#weather hr {
+    grid-row: 3;
+    grid-column: 1/3;
+}
+.weather_chill-speed {
+    display: grid;
+    grid-row: 4;
+    grid-column: 1/3;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+.weather_chill-speed span{
+    margin: 2px auto;
+}
+.weather_chill-speed span:first-child, .weather_chill-speed span:nth-child(3) {
+    grid-column: 1;
+}
+.weather_chill-speed span:last-child, .weather_chill-speed span:nth-child(2) {
+    grid-column: 2;
+}
+
+
+footer {
+    background-color: var(--primary-color);
+    display: grid;
+    text-align: center;
+    grid-template-columns: auto;
+    font-size: 3vw;
+    color: white;
+    margin: 0px 0;
+}
+
+footer a {
+    display:block;
+    margin: auto;
+}
+footer a picture {
+    margin: auto;
+}
+footer a picture img {
+    width: 100%;
+    margin: 3px auto;
+}
+
+.footer_author{
+    font-size:1.25em;
+}
+.last_modified_date {
+    display:inline-block;
+    visibility: visible;
+    font-style: normal;
+    font-size: 1em;
+}
+
+.footer_year{
+    display:inline-block;
+    visibility: visible;
+    font-style: normal;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+.footer_chamber_info span {
+    font-weight:700;
+    font-size:1.25em;
+}
+.footer_chamber_info {
+    font-style: italic;
+    margin: 5px auto;
+}
+.footer_chamber_info {
+    font-size: 1em;
+}
+.bottom_of_footer div {
+    font-style:normal;
+    font-size: 1.1em;
+}
+.line {
+    display: block;
+    visibility: hidden;
+    font-size: 0px;
+}
+.bottom_of_footer br {
+    display: none;
+}
+.contact_info p a {
+    display:inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+.banner {
+    width: auto;
+    height: auto;
+    text-align: center;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--accent1-color);
+}
+.banner h2 {
+    font-size: 2em;
+    text-shadow: 1px 0px .75px black;
+}
+.banner p {
+    font-size: 1.4em;
+    color: yellow;
+}
+
+/*Discover Page*/
+#discover_page section p{
+    font-size: 1.25em;
+}
+#education .national_info {
+    display: block;
+    text-align: right;
+    margin-right: .5em;
+    color: white;
+    
+}
+#discover_grid .spotlight {
+    padding: 5px;
+}
+#discover_grid div picture img {
+    transition: filter 0.5s;
+    border: 2px solid black;
+    box-shadow: 0px 0px 2px black;
+}
+#population {
+    font-size: 2.5em;
+}
+
+#statistics section {
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+#statistics section h2{
+    grid-column: 1/3;
+}
+#statistics #demographics {
+    display: flex;
+    flex-direction: column;
+}
+#education {
+    width: auto;
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+.national_value {
+    width: 20%;
+    background-color:darkgrey;
+    border-left:1px solid grey;
+}
+.graph {
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    margin: 10px auto;
+}
+.bar_graph {
+    width:100%;
+    display: flex;
+    flex-wrap:nowrap;
+    border: 1px solid grey;
+    flex-direction: row;
+    height: 20px;
+}
+.graph_info{
+    width: 100%;
+    position: relative;
+    margin-top: -20px;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+#education .graph .graph_info{
+    width: 80%;
+}
+.graph_info span {
+    display:inline-flex;
+    text-align: left;
+}
+.graph_info .right-aligned {
+    display: inline-flex;
+    text-align: right;
+}
+.bar_graph .filled_bar {
+    background-color: var(--accent1-color);
+    grid-row: 1;
+}
+.bar_graph .unfilled_bar {
+    background-color: darkgrey;
+    grid-row: 1;
+}
+.bar_graph .national_value {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+#master_degree .filled_bar{width: 3%;}
+#master_degree .unfilled_bar{width: 97%;}
+#bachelor_degree .filled_bar{width: 14%;}
+#bachelor_degree .unfilled_bar{width: 86%;}
+#assosciate_degree .filled_bar{width: 27%;}
+#assosciate_degree .unfilled_bar{width: 73%;}
+
+#race_white .filled_bar{width:92%}
+#race_white .unfilled_bar{width:8%}
+#race_mixed .filled_bar{width:5%}
+#race_mixed .unfilled_bar{width:95%}
+#race_hispanic .filled_bar{width:3%}
+#race_hispanic .unfilled_bar{width:97%}
+
+#gender_male .filled_bar {width:52%;}
+#gender_male .unfilled_bar {width:48%;}
+#gender_female .filled_bar {width:48%;}
+#gender_female .unfilled_bar {width:52%;}
+
+#median_household, #median_individual {
+    font-size: 1em;
+    text-align: left;
+    margin: 0em .5em auto .5em;
+}
+#median_individual {
+    justify-content:space-around;
+}
+
+
+.income_value {
+    display: block;
+    font-size:2.25em;
+    text-align: left;
+}
+.national_income {
+    display: block;
+    text-align: left;
+    color: white;
+}
+
+#household_income_1 .filled_bar {width:31%;}
+#household_income_1 .unfilled_bar {width:69%;}
+#household_income_2 .filled_bar {width:14%;}
+#household_income_2 .unfilled_bar {width:86%;}
+#household_income_3 .filled_bar {width:14%;}
+#household_income_3 .unfilled_bar {width:86%;}
+#household_income_4 .filled_bar {width:35%;}
+#household_income_4 .unfilled_bar {width:65%;}
+#household_income_5 .filled_bar {width:6%;}
+#household_income_5 .unfilled_bar {width:94%;}
+
+#ind_income_1 .filled_bar {width:23%;}
+#ind_income_1 .unfilled_bar {width:77%;}
+#ind_income_2 .filled_bar {width:31%;}
+#ind_income_2 .unfilled_bar {width:69%;}
+#ind_income_3 .filled_bar {width:32%;}
+#ind_income_3 .unfilled_bar {width:68%;}
+#ind_income_4 .filled_bar {width:15%;}
+#ind_income_4 .unfilled_bar {width:85%;}
+
+/*joinpage thank you page*/
+#thankyou_page section p{
+    font-size: 1.75em;
+    margin:3.5em auto;
+}
+#joinpage h1, #thankyou_page section h1{
+    font-size:2.75em;
+    text-align:center;
+    text-shadow: 2px 0px 2px var(--primary-color), 0px 1px 2px var(--primary-color), -2px 0px 1px var(--accent2-color);
+    color:var(--heading-color);
+}
+#joinpage form {
+    display: flex;
+    flex-direction: column;
+    justify-items:center;
+    
+}
+#joinpage form fieldset{
+    display:flex;
+    flex-direction:column;
+    margin:.2em .5em;
+    padding: 1.25rem .75rem;
+    background-color:var(--secondary-color);
+    border: 2px solid var(--accent1-color);
+    border-radius:7.5px 7.5px 2px 2px;
+}
+#joinpage form fieldset:nth-child(2) label{
+    display:flex;
+    flex-direction:column;
+    font-size:1.2em;
+    margin:0;
+    padding:0;
+}
+#joinpage form fieldset:nth-child(2) label input{
+    margin:.75em 0;
+    padding:.5em;
+}
+#joinpage form button{
+    width:auto;
+    height:3rem;
+    margin:auto .5em;
+}
+#joinpage form .member-tiers {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap: 1em;
+}
+#joinpage form .member-tiers .membership-tier{
+    display:flex;
+    flex-direction:column;
+    margin:auto;
+    background-color:var(--secondary-color);
+    border: 2px solid var(--accent1-color);
+    box-shadow: -2px -2px 16px var(--accent1-color), 2px 2px 16px var(--accent1-color);
+    border-radius:25px 25px 22.5px 22.5px;
+    min-width: 17em;
+    height: 19em;
+    
+}
+#joinpage form .member-tiers .membership-tier hr{
+    display:inline;
+    border: 1px solid var(--accent1-color);
+    border-radius:1px;
+}
+#joinpage form .member-tiers .membership-tier h4{
+    text-align: center;
+    font-size: 1.75em;
+    margin: .5em;
+    color:var(--primary-color);
+    font-style:oblique;
+    text-shadow: 1px 0px 1.5px var(--primary-color);
+}
+#joinpage form .member-tiers .membership-tier h4 span{
+    margin: 0px auto 0px .25em;
+    font-style:normal;
+    font-weight:lighter;
+    font-size: .65em;
+    text-shadow: 0px 0px 0px black;
+}
+#joinpage form .member-tiers .membership-tier h5{
+    text-align: center;
+    font-size: 1.3em;
+    margin: 0;
+    font-style:italic;
+    color:var(--accent1-color);
+    text-shadow:.5px .2px .65px var(--accent1-color), -.5px -.2px .65px var(--accent1-color),
+    .5px .2px .65px black, -.5px -.2px .65px black;
+}
+#joinpage form .member-tiers .membership-tier .tier-benefits{
+    min-height: 36%;
+}
+#joinpage form .member-tiers .membership-tier .tier-benefits li{
+    font-size: 1.05em;
+    color:black;
+    font-weight:bold;
+    margin:0 auto .5em auto;
+}
+#joinpage form .member-tiers .membership-tier label{
+    display:inline-flex;
+    margin:auto;
+    gap:.5em;
+    color:var(--heading-color);
+    font-size:1.25em;
+    text-shadow:1px 1px 3px var(--accent1-color), -1px -1px 3px var(--accent1-color);
+    font-weight:bold;
+}
+/*directory page*/
+.businesses {
+    display: grid;
+    grid-template-columns:repeat(auto-fill, minmax(270px, 1fr));
+}
+
+#directory_page div:first-child{
+    display:flex;
+    justify-content:center;
+    margin:1em;
+}
+#directory_page button{
+    line-height: .7;
+    font-size:1.5em;
+    width: 2.7em;
+    min-width: 2.5em;
+    height: 2.7em;
+    min-height: 2.5em;
+    background-color:var(--secondary-color);
+    border-color:var(--accent1-color);
+    border-radius: .5em;
+    border-width: 3px;
+    margin: 0em 2em;
+    padding: .2em;
+}
+#directory_page button:hover{
+    background-color:var(--accent1-color);
+    border-color:var(--accent2-color);
+}
+
+.list {
+    display:flex;
+    flex-direction:column;
+    text-align: left;
+    margin: 0em;
+    grid-column:1/10;
+}
+.list:nth-child(even){
+    background-color:darkgrey;
+    border-top: 0px;
+    border-bottom: 0px;
+}
+.list h2 {
+    font-size: 1.2em;
+    text-align: left;
+}
+.list img {
+    display:none;
+}
+
+/*contact page*/
+
+#contact_page section form fieldset label {
+    display:flex;
+    flex-direction:column;
+    margin: auto;
+    margin-bottom:.5em;
+    text-align:left;
+    font-size:1.1em;
+}
+#contact_page section form fieldset label input {
+    margin-top:.3em;
+    height:2em;
+}
+#contact_page section form div {
+    grid-column:1/3;
+    margin:1.5em auto 1.5em auto;
+    display:flex;
+    flex-direction:column;
+    text-align:left;
+}
+#contact_page section form div label {
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    gap:.5em;
+    margin-top:.5em;
+    margin-left:0;
+}
+#contact_page section form label:last-of-type textarea {
+    min-height: 10em;
+    width:100%;
+}
+
+#contact_page section form  div label input {
+    min-width:2em;
+    min-height:2em;
+}
+
+#contact_page section form button {
+    margin:auto;
+    min-width:13em;
+    min-height:3em;
+}
+#contact_page section h1 {
+    font-size:1.5em;
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+    text-shadow: 1px 0px 2px var(--primary-color);
+    text-shadow: 0px 0px 4px var(--accent1-color);
+}
+#contact_page section h2 {
+    font-size:1.5em;
+}
+#contact_page section h4 {
+    color:var(--accent2-color);
+    text-shadow: 0px 1px 1px var(--primary-color), 1px 0px 1px var(--primary-color);
+    font-size: 1.25em;
+    margin: 1em auto .5em auto;
+}
+#contact_page section p {
+    font-size: 1.1em;
+    margin: .25em auto .25em auto;
+}
+#contact_page section {
+    display:flex;
+    flex-direction:column;
+}
