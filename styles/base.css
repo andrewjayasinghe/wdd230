@@ -14,6 +14,10 @@ main {
     
 }
 
+section.contact-info{
+    background-color: #f3d265;
+}
+
 header {
     background-color: #f3d265;
     display: grid;
@@ -192,4 +196,45 @@ p:last-child {
 	font-size: 3rem;
 	cursor: pointer;
 	font-size: 2rem;
+}
+@media screen and (max-width: 850px){
+
+
+section.contact-info {
+    grid-template-columns: 1fr;
+    background-color: #f3d265;
+}
+section.contact-info iframe {
+    width: 98%;
+    height: 300px;
+    grid-column: 1;
+    grid-row: span 1;
+    grid-gap: 10px;
+}
+section.contact-info h3 {
+    margin-top: 1rem;
+}
+section.contact-info ul {
+    margin-left: calc(2.14285714em + (35% - 120px));
+    margin-bottom: 15px;
+}
+section.contact-info h3,
+section.contact-info .social-links {
+    margin-left: calc(35% - 120px);
+}
+
+}
+
+@media screen and (max-width: 430px) {
+    #brk1 {
+        display: block;
+    }
+    section.contact-info ul {
+        margin-left: calc(2.14285714em + (30% - 70px));
+        margin-bottom: 15px;
+    }
+    section.contact-info h3,
+    section.contact-info .social-links {
+        margin-left: calc(30% - 70px);
+    }
 }
