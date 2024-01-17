@@ -175,9 +175,8 @@ section.contact-info {
     width: 100%;
     padding: 1rem;
     display: grid;
-    background-color: var(--default-dark);
     grid-template-columns: 50% auto;
-    box-shadow: 0 0 10px var(--default-dark);
+    background-color: #f3d265;
 }
 section.contact-info iframe {
     width: 90%;
@@ -188,7 +187,6 @@ section.contact-info iframe {
 }
 section.contact-info h3, section.contact-info ul {
     margin-top: 0;
-    color: var(--default-light);
 }
 section.contact-info ul {
     margin-bottom: 0;

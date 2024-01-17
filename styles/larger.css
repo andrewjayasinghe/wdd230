@@ -47,8 +47,10 @@
     .grid-container {
         display: grid;
         column-gap: 50px;
-        grid-template-columns: auto auto auto;
-        padding: 10px;
+        grid-template-columns: auto auto ;
+        padding: 20px 100px 10px 100px;
+        margin: 0 auto;
+
       }
     
       .card{
@@ -91,9 +93,8 @@
         /* width: 100%; */
         padding: 1rem;
         display: grid;
-        background-color: var(--default-dark);
+        background-color: #f3d265;
         grid-template-columns: 50% auto;
-        box-shadow: 0 0 10px var(--default-dark);
     }
     section.contact-info iframe {
         width: 90%;
@@ -154,6 +155,24 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+    .herolabel {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        background: radial-gradient(#fff, #d3d6e0);
+        border: 1px solid rgba(0,0,0,.75);
+        padding: 1.5rem;
+        /* box-shadow: 0 0 3rem #fff; */
+        /* opacity: 0.75; */
+        /* Buenas */
+    }
     
+    .herolabel p {
+        margin: 0;
+        padding: .25rem;
+        font-weight: 700;
+        font-size: 2rem;
+        /* font-family:"Great Vibes", serif; */
+    }
 
 }
