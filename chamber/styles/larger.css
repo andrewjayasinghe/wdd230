@@ -158,7 +158,7 @@
         margin: auto 2em;
     }
     .footer_chamber_info span {
-        text-align: left;
+        /* text-align: left; */
         font-size: 26px;
     }
     .footer_chamber_info div {

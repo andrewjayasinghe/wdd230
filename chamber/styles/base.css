@@ -437,7 +437,7 @@ footer a picture img {
     display: block;
     text-align: right;
     margin-right: .5em;
-    color: white;
+    color: black;
     
 }
 #discover_grid .spotlight {
@@ -510,7 +510,7 @@ footer a picture img {
     text-align: right;
 }
 .bar_graph .filled_bar {
-    background-color: var(--accent1-color);
+    background-color: #20bcbc;
     grid-row: 1;
 }
 .bar_graph .unfilled_bar {
@@ -559,7 +559,7 @@ footer a picture img {
 .national_income {
     display: block;
     text-align: left;
-    color: white;
+    color: black;
 }
 
 #household_income_1 .filled_bar {width:31%;}

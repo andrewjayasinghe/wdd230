@@ -14,7 +14,7 @@
     }
     .footer_chamber_info {
         grid-column: 2;
-        text-align: left;
+        /* text-align: left; */
         margin: auto 1vw auto 2vw;
     }
     .footer_chamber_info span {
