@@ -126,9 +126,46 @@ if(document.querySelector("#homepage")){
     homepage()
 }
 
-if(document.querySelector("#discover_page")){
+// if(document.querySelector("#discover_page")){
+//     const msToDay = 86400000;
+//     const msToHr = 3600000;
+//     const __days = document.querySelector(".days_ago");
+//     const __hours = document.querySelector(".hours_ago");
+//     const __minutes = document.querySelector(".minutes_ago");
+//     const __seconds = document.querySelector(".seconds_ago");
+
+//     window.addEventListener('unload', () => {
+//         localStorage.setItem('lastVisited', date.getTime())
+//     });
+//     const priorVisit = localStorage.getItem('lastVisited') || 0;
+    
+//     function findDays(value){
+//         if(value == 0){
+//             return [0, 0, 0, 0];
+//         }
+//         let miliseconds = date.getTime() - value;
+//         let days = miliseconds/msToDay;
+//         let hours = (miliseconds%msToDay)/msToHr;
+//         let minutes = ((miliseconds%msToDay)%msToHr)/60000;
+//         let seconds = (((miliseconds%msToDay)%msToHr)%60000)/1000;
+//         return [days, hours, minutes,seconds];
+//     }
+//     const lastVisit = findDays(priorVisit);
+    
+//     function displayVisit(){
+//         __days.textContent = `${Math.round(lastVisit[0])}`;
+//         __hours.textContent = `${Math.round(lastVisit[1])}`;
+//         __minutes.textContent = `${Math.round(lastVisit[2])}`;
+//         __seconds.textContent = `${Math.round(lastVisit[3])}`;
+//     }
+//     displayVisit();
+
+// }
+if (document.querySelector("#discover_page")) {
     const msToDay = 86400000;
     const msToHr = 3600000;
+    const date = new Date();
+    const _num_days = document.querySelector(".num_days_ago");
     const __days = document.querySelector(".days_ago");
     const __hours = document.querySelector(".hours_ago");
     const __minutes = document.querySelector(".minutes_ago");
@@ -138,28 +175,41 @@ if(document.querySelector("#discover_page")){
         localStorage.setItem('lastVisited', date.getTime())
     });
     const priorVisit = localStorage.getItem('lastVisited') || 0;
-    
-    function findDays(value){
-        if(value == 0){
+
+    function findDays(value) {
+        if (value == 0) {
             return [0, 0, 0, 0];
         }
-        let miliseconds = date.getTime() - value;
-        let days = miliseconds/msToDay;
-        let hours = (miliseconds%msToDay)/msToHr;
-        let minutes = ((miliseconds%msToDay)%msToHr)/60000;
-        let seconds = (((miliseconds%msToDay)%msToHr)%60000)/1000;
-        return [days, hours, minutes,seconds];
+        let milliseconds = date.getTime() - value;
+        let days = milliseconds / msToDay;
+        let hours = (milliseconds % msToDay) / msToHr;
+        let minutes = ((milliseconds % msToDay) % msToHr) / 60000;
+        let seconds = (((milliseconds % msToDay) % msToHr) % 60000) / 1000;
+        return [days, hours, minutes, seconds];
     }
     const lastVisit = findDays(priorVisit);
-    
-    function displayVisit(){
-        __days.textContent = `${Math.round(lastVisit[0])}`;
+
+    function displayVisit() {
+        if (priorVisit === 0) {
+            // First visit
+            __days.textContent = "Welcome! Let us know if you have any questions.";
+        } else if (lastVisit[0] < 1) {
+            // Less than a day
+            __days.textContent = "Back so soon! Awesome!";
+        } else {
+            // Display the number of days
+            const daysText = Math.round(lastVisit[0]) === 1 ? "day" : "days";
+            __days.textContent = `You last visited ${Math.round(lastVisit[0])} ${daysText} ago.`;
+        }
+
+        // Display the time components as before
+        _num_days.textContent = `${Math.round(lastVisit[0])}`;
         __hours.textContent = `${Math.round(lastVisit[1])}`;
         __minutes.textContent = `${Math.round(lastVisit[2])}`;
         __seconds.textContent = `${Math.round(lastVisit[3])}`;
     }
-    displayVisit();
 
+    displayVisit();
 }
 
 const __menu = document.getElementsByClassName("navigation");
