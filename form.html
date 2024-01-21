@@ -1,35 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <!-- This start file was build by Paul Cheney  -->
-    <title>HTML5 Start Site by Paul Cheney</title>
-    <meta name="author" content="John Doe">
-    <meta name="description" content="Fill Me In">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Jayasinghe - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="Andrew Jayasinghe - WDD 230 - Web Frontend Development - Assignment Portal">
+    <meta property="og:locale" content="en-US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Andrew Jayasinghe - Home Page">
+    <meta property="og:url" content="https://andrewjayasinghe.github.io/wdd230/">
+    <meta property="og:image" content="https://brightspot-assets.churchofjesuschrist.org/dims4/default/f1954e9/2147483647/strip/false/crop/1932x1017+0+0/resize/1280x674!/format/jpg/quality/90/?url=https%3A%2F%2Fassets.churchofjesuschrist.org%2F31%2F72%2F3172a0b72dcf43c62af65bf2e514b50b9900b2fe%2Fjesus_christ_healing_people.jpeg">
+    <meta name="author" content="Andrew Jayasinghe">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
 
-    <link href="styles/form.css" rel="stylesheet">
-    <!-- <link href="styles/base.css" rel="stylesheet">
-    <link href="styles/larger.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <script rel="script" defer src="scripts/getDates.js"></script>
 </head>
 
 <body>
-    <header>
-        <h1>Course Proposal</h1>
-        <h2>Designing Web Forms</h2>
-    </header>
-
-    <nav class="clearfix">
-        <ul>
-            <li><a href="#">About</a></li>
-            <li class="active"><a href="#">Propose</a></li>
-            <li><a href="#">Winners</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-
+    <!--This is an HTML comment-->
     <main>
+        <header>
+           <img src="images/photo_of_andrew.png" alt="Photo of Me - (Andrew Jayasinghe)">
+            <h1><span >Andrew Jayasinghe</span></h1>
+            <div id="mode">
+                🕶️
+            </div>
+        </header>
+        <nav >
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chamber/index.html">Chamber</a></li>
+                <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+                <li><a href="form.html">Form</a></li>
+            </ul>
+        </nav>
+
         <h1>Course Proposal Application</h1>
             <!-- <form method="get" action="thanks.html"> -->
                 <form>
@@ -83,9 +95,23 @@
     </main>
 
 
+    <hr>
     <footer>
-        &copy; &bull; Andrew Jayasinghe &bull; 123-555-6789
-    </footer>
+    <section class="contact-info">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83330.52547078389!2d-123.04461260270405!3d49.2559500280141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673f143a94fb3%3A0xbb9196ea9b81f38b!2sVancouver%2C%20BC%2C%20Canada!5e0!3m2!1sen!2sus!4v1705388955698!5m2!1sen!2sus" width="600" height="450" style="border:0;"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="embedded map" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <!-- <h3>Contact Information</h3> -->
+        <ul class="fa-ul">
+            <li><i class="fa-li fa fa-location-arrow"></i><h3>&copy; <span id="footer_year"></span> Andrew Jayasinghe
+                <span id="brk1"></span>
+               | Vancouver, CA 83263</h3></li>
+            <!-- <li><i class="fa-li fa fa-phone"></i>(208) 123-4567</li> -->
+            <li><i class="fa-li fa fa-envelope"></i>
+                Last Updated: <span id="last_modified_date"></span></li>
+        </ul>
+       
+    </section>
+</footer>
     <script src="scripts/scripts.js"></script>
 </body>
 
