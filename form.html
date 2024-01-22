@@ -44,15 +44,52 @@
 
         <h1>Course Proposal Application</h1>
             <!-- <form method="get" action="thanks.html"> -->
-                <form>
+                
+                <form id="registrationForm" onsubmit="validateForm()"  method="get" action="record.html">
+                    <fieldset>
+                    <label for="username" class="top">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                
+                    <label for="password" class="top">Password:</label>
+                    <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]+" required minlength="8">
+                
+                    <label for="confirmPassword" class="top">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                
+                    <label for="email" class="top">Email:</label>
+                    <input type="email" id="email" name="email"  pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" required
+                           title="Please enter a valid email address">
+                
+                    <label for="pageRating" class="top">Page Rating:</label>
+                    <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1" oninput="updateRating()">
+                    <span id="ratingValue">5</span>
+                
+                    
+                           
+                </fieldset>
+                <input type="submit" value="Submit" class="submitBtn">
+
+                </form>
+                <!-- <form>
                 <fieldset>
                     <legend>Applicant Information</legend>
-                    <label class="top">First Name* <input type="text" name="fname" required ></label>
-                    <label class="top">Last Name* <input type="text" name="lname" required ></label>
-                    <label class="top">Phone <input type="tel" name="phone" placeholder="1234567890" ></label>
-                    <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required ></label>
-                    <label class="top">Website <input type="url" name="url" placeholder="http://"></label>
-                </fieldset>
+                    <label class="top">Username* <input type="text" name="fname" required ></label>
+                    <label class="top" for="keyphrase">Password* <input type="text" id="keyphrase" pattern="[a-zA-Z -]{6}" placeholder="At least 8 characters long." required ></label>
+                    <label class="top" for="keyphrase2">Confirm Password* <input type="text" name="keyphrase2" id="keyphrase2" required ></label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="someone@byui.edu" required ></label>
+                    <label for="r" class="top">Page Rating</label>
+                    <div id="rangevalue">0</div>
+                    <input type="range" id="r" name="r" min="0" max="5" value="0" step="1" list="rangevalues">
+                    <datalist id="rangevalues">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </datalist>
+                                 
+                 </fieldset>
 
                 <fieldset>
                     <legend>Course Information</legend>
@@ -91,7 +128,7 @@
 
                 <input type="submit" value="Propose my Course" class="submitBtn">
                 
-            </form>
+            </form> -->
     </main>
 
 
