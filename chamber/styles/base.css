@@ -601,8 +601,8 @@ footer a picture img {
 #joinpage h1, #thankyou_page section h1{
     font-size:2.75em;
     text-align:center;
-    text-shadow: 2px 0px 2px var(--primary-color), 0px 1px 2px var(--primary-color), -2px 0px 1px var(--accent2-color);
-    color:var(--heading-color);
+    text-shadow: .5px 0px .5px var(--primary-color), 0px .5px .5px var(--primary-color), -.2px 0px .1px var(--accent2-color);
+    color:var(--primary-color);
 }
 #joinpage form {
     display: flex;
@@ -669,16 +669,16 @@ footer a picture img {
 #joinpage form .member-tiers .membership-tier h4 span{
     margin: 0px auto 0px .25em;
     font-style:normal;
-    font-weight:lighter;
+    /* font-weight:lighter;
     font-size: .65em;
-    text-shadow: 0px 0px 0px black;
+    text-shadow: 0px 0px 0px black; */
 }
 #joinpage form .member-tiers .membership-tier h5{
     text-align: center;
     font-size: 1.3em;
     margin: 0;
     font-style:italic;
-    color:var(--accent1-color);
+    color:var(--primary-color);
     text-shadow:.5px .2px .65px var(--accent1-color), -.5px -.2px .65px var(--accent1-color),
     .5px .2px .65px black, -.5px -.2px .65px black;
 }

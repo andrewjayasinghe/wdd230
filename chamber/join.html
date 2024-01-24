@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The town of Gales Creek's Chamber of Commerce website aims to
-    provide valuable information, education, and resources to local businesses in the area of Gales Creek.">
+    <meta name="description" content="The town of Gales Creek's Chamber of Commerce join page">
     <meta property="og:locale" content="en-US">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Andrew Jayasinghe - Gales Creek Chamber of Commerce">
     <meta property="og:url" content="https://andrewjayasinghe.github.io/wdd230/">
     <meta property="og:image" content="https://brightspot-assets.churchofjesuschrist.org/dims4/default/f1954e9/2147483647/strip/false/crop/1932x1017+0+0/resize/1280x674!/format/jpg/quality/90/?url=https%3A%2F%2Fassets.churchofjesuschrist.org%2F31%2F72%2F3172a0b72dcf43c62af65bf2e514b50b9900b2fe%2Fjesus_christ_healing_people.jpeg">
     <meta name="author" content="Andrew Jayasinghe">
-    <title>Gales Creek Chamber of Commerce</title>
+    <title>Gales Creek Chamber of Commerce - Join</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +24,10 @@
     <script rel="script" defer src="scripts/windchill.js"></script>
     <script rel="script" defer src="scripts/script.js"></script>
 </head>
+
 <body>
+
+
     <header>
         <a class="header-logo" href="index.html">
             <picture>
@@ -50,78 +52,82 @@
         </div>
         <time datetime="2023-05-19 20:00"></time>
     </header>
-    <main id="homepage">
-        <section class="hero">
-            <h1>Gales Creek Chamber of Commerce</h1>
-            <button type="button" onclick="">Join the Chamber</button>
-            <picture>
-                <source srcset="images/medium/wdd230-org-medium.webp" media="(min-width:520px) and (max-width:1023px)">
-                <source srcset="images/large/wdd230-org-large.webp" media="(min-width:1024px)">
-                <img alt="hero_image" src="images/small/wdd230-org-small.webp">
-            </picture>
-        </section>
-        <div id="weath_event">
-            <section id="event">
-                <h2>Ribbon Cutting</h2>
-                <p>💎The Diamond Shack</p>
-                <p>Join us for the grand opening of The Diamond Shack, Thursday at 1:00pm.
-                <a>more info ...</a></p>
-            </section>
-            <section id="weather">
-                <h2>Weather</h2>
-                <picture>
-                    <img src="https://openweathermap.org/img/w/01n.png" alt="weather_img">
-                </picture>
-                <div class="weather_info">
-                    <span class="temperature">42°F</span>
-                    <span class="weather_descriptor">Partly Cloudy</span>
-                </div>
-                
-                <div class="weather_chill-speed">
-                    <span>Wind Speed:</span><span class="wind_speed">4 mph</span>
-                    <span>Wind Chill:</span><span class="wind_chill"></span>
-                </div>
-            </section>
-        </div>
-        <section id="news">
-            <h2>News Release</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices. Magna ac placerat vestibulum lectus mauris ultrices eros in cursus. Et malesuada fames ac turpis egestas sed tempus urna et. At augue eget arcu dictum varius.</p>
-        </section>
-        <div class="spotlights">
-            <div class="spotlight">
-                <h2>Thankful Transport</h2>
-                <div><img src="images/moving_truck.png" alt="moving_truck_img"></div>
-                <p class="subtitle"><i>"We get it there for you!"</i></p>
-                
-                <span>hello@thankfultransport.com</span>
-                <br>
-                <span>+999-999-9999 Website</span>
-            </div>
-            <div class="spotlight">
-                <h2>Code Primera</h2>
-                <div><img src="images/code_pencils.webp" alt="code_pencils_img"></div>
-                <p class="subtitle"><i>An after school coding instructional program.</i></p>
-                
-                <span>contact@codeprimera.com</span>
-                <br>
-                <span>+999-999-9999 | Website</span>
-            </div>
-            <div class="spotlight">
-                <h2>Build A Treefort</h2>
-                <div><img src="images/tree_house.webp" alt="tree_house_img"></div>
-                <p class="subtitle"><i>Over 1000 Plans!</i></p>
-                
-                <span>builda@treefort.com</span>
-                <br>
-                <span>+999-999-9999 Website</span>
-            </div>
-        </div>
-        <div id="join">
-            <button type="button">Join Us!</button>
-            <p>Discover how to join the chamber of commerce and how it will 
-                benefit your organization!</p>
-            </div>
+
+
+        <main id="joinpage">
+            <h1>Join Us!</h1>
+            <form method="get" action="thankyou.html">
+                <fieldset class="member-tiers">
+                    <div class="membership-tier">
+                        <h4 class="tier-cost">$15<span>monthly</span></h4>
+                        <hr>
+                        <h5>Benefits</h5>
+                        <ul class="tier-benefits">
+                            <li>Trainings</li>
+                            <li>Fundraising Coordination</li>
+                        </ul>
+                        <hr>
+                        <label for="npmember"><input type="radio" name="member" value="npmember" id="npmember" required>Non Profit Membership</label>
+                        <hr>
+                    </div>
+                    <div class="membership-tier">
+                        <h4 class="tier-cost">$35<span>monthly</span></h4>
+                        <hr>
+                        <h5>Benefits</h5>
+                        <ul class="tier-benefits">
+                            <li>Trainings</li>
+                            <li>Marketing Consultation</li>
+                        </ul>
+                        <hr>
+                        <label for="brmember"><input type="radio" name="member" value="brmember" id="brmember" required>Bronze Membership</label>
+                        <hr>
+                    </div>
+                    <div class="membership-tier">
+                        <h4 class="tier-cost">$60<span>monthly</span></h4>
+                        <hr>
+                        <h5>Benefits</h5>
+                        <ul class="tier-benefits">
+                            <li>Trainings</li>
+                            <li>Marketing Consultation</li>
+                            <li>+ Homepage Advertising</li>
+                        </ul>
+                        <hr>
+                        <label for="smember"><input type="radio" name="member" value="smember" id="smember" required>Silver Membership</label>
+                        <hr>
+                    </div>
+                    <div class="membership-tier">
+                        <h4 class="tier-cost">$115<span>monthly</span></h4>
+                        <hr>
+                        <h5>Benefits</h5>
+                        <ul class="tier-benefits">
+                            <li>Trainings</li>
+                            <li>Marketing Consultation</li>
+                            <li>+ Homepage Advertising</li>
+                            <li>+ Event Discounts</li>
+                        </ul>
+                        <hr>
+                        <label for="gmember"><input type="radio" name="member" value="gmember" id="gmember" required>Gold Membership</label>
+                        <hr>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <label for="fname">First Name*<input type="text" name="fname" id="fname" required></label>
+                    <label for="lname">Last Name*<input type="text" name="lname" id="lname" required></label>
+                    <label for="bposition">Business Position<input type="text" name="bposition" id="bposition" pattern="[A-Za-z\s\-]{7,}"></label>
+                    <label for="email">Email Address*<input type="email" name="email" id="email" placeholder="johndoe@gmail.com" required></label>
+                    <label for="phonenum">Phone Number*<input type="tel" name="phonenum" id="phonenum" required></label>
+                    <label for="bname">Business Name*<input type="tel" name="bname" id="bname" required></label>
+                    <label for="bdescription">Business Description<textarea name="bdescription" id="bdescription"></textarea></label>
+                    
+                </fieldset>
+                <label for="submissionTime" hidden>Date and Time<input name="submissionTime" id="submissionTime" required></label>
+                <button onclick="getDateAndTime()">Submit</button>
+            </form>
+
+
     </main>
+
+
     <footer>
         <a href="index.html">
             <!-- <picture>
@@ -159,4 +165,5 @@
            </div> 
         </div>-->
     </footer>
+    
 </body>
