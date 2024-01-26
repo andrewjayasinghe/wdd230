@@ -48,3 +48,6 @@ function updateRating() {
     document.getElementById("ratingValue").innerText = ratingValue;
 }
 
+
+
+  
