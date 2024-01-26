@@ -6,7 +6,7 @@
         "phonenumber":"+999-999-9999",
         "website":"#thankfultransport.com",
         "img":"./images/moving_truck.png",
-        "address":"3242 Vanilla-ice Drive Gales Creek CA 19961",
+        "address":"3242 Vanilla-ice Drive, Gales Creek CA 19961",
         "membership-lvl":2
     },"2":{
         "name":"Code Primera",
@@ -15,7 +15,7 @@
         "phonenumber":"+2359-429-0609",
         "website":"#codeprimera.com",
         "img":"./images/code_pencils.webp",
-        "address":"234 Acdc Road Gales Creek CA 19961",
+        "address":"234 Acdc Road Gales, Creek CA 19961",
         "membership-lvl":3
     },"3":{
         "name":"Build A Treefort",
@@ -24,7 +24,7 @@
         "phonenumber":"+4959-929-9909",
         "website":"#treefort.com",
         "img":"./images/tree_house.webp",
-        "address":"982 Toto Boulevard Gales Creek CA 19961",
+        "address":"982 Toto Boulevard Gales, Creek CA 19961",
         "membership-lvl":2
     },"4":{
         "name":"Paintless",
@@ -33,7 +33,7 @@
         "phonenumber":"+0034-921-7878",
         "website":"#paintless.com",
         "img":"./images/paintless.webp",
-        "address":"2274 Beatles Boulevard Gales Creek CA 19961",
+        "address":"2274 Beatles Boulevard Gales, Creek CA 19961",
         "membership-lvl":1
     },"5":{
         "name":"Humanity Affairs",
@@ -42,7 +42,7 @@
         "phonenumber":"+6754-627-1101",
         "website":"#humanityaffairs.com",
         "img":"./images/humanity_affairs.webp",
-        "address":"996 Astley Street Gales Creek CA 19961",
+        "address":"996 Astley Street Gales, Creek CA 19961",
         "membership-lvl":1
     },"6":{
         "name":"Twelling Gas",
@@ -51,7 +51,7 @@
         "phonenumber":"+4292-956-0027",
         "website":"#twellinggas.com",
         "img":"./images/twelling_gas.webp",
-        "address":"2305 Police Drive Gales Creek CA 19961",
+        "address":"2305 Police Drive Gales, Creek CA 19961",
         "membership-lvl":1
     },"7":{
         "name":"Jonas Electric",
@@ -60,7 +60,7 @@
         "phonenumber":"+2497-874-1798",
         "website":"#jonaselectric.com",
         "img":"./images/jonas_electric.webp",
-        "address":"261 Chapin Place Gales Creek CA 19961",
+        "address":"261 Chapin Place Gales, Creek CA 19961",
         "membership-lvl":2
     },"8":{
         "name":"Noble Suites",
@@ -69,7 +69,7 @@
         "phonenumber":"+9424-001-9923",
         "website":"#noblesuites.com",
         "img":"./images/noble_suites.webp",
-        "address":"234 Journey Circle Gales Creek CA 19961",
+        "address":"234 Journey Circle Gales, Creek CA 19961",
         "membership-lvl":1
     },"9":{
         "name":"Midnight Eye Security",
@@ -78,7 +78,7 @@
         "phonenumber":"+3620-781-0091",
         "website":"#midnighteyesecurity.com",
         "img":"./images/midnight_eye_security.webp",
-        "address":"4985 Rolling Street Gales Creek CA 19961",
+        "address":"4985 Rolling Street Gales, Creek CA 19961",
         "membership-lvl":2
     }
 }
