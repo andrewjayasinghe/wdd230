@@ -25,7 +25,9 @@
     <script rel="script" defer src="scripts/windchill.js"></script>
     <script rel="script" defer src="scripts/script.js"></script>
 </head>
+
 <body>
+
     <header>
         <a class="header-logo" href="index.html">
             <picture>
@@ -50,79 +52,36 @@
         </div>
         <time datetime="2023-05-19 20:00"></time>
     </header>
-    <main id="homepage">
-        <section class="hero">
-            <h1>Gales Creek Chamber of Commerce</h1>
-            <button type="button" onclick="">Join the Chamber</button>
-            <picture>
-                <source srcset="images/medium/wdd230-org-medium.webp" media="(min-width:520px) and (max-width:1023px)">
-                <source srcset="images/large/wdd230-org-large.webp" media="(min-width:1024px)">
-                <img alt="hero_image" src="images/small/wdd230-org-small.webp">
-            </picture>
-        </section>
-        <div id="weath_event">
-            <section id="event">
-                <h2>Ribbon Cutting</h2>
-                <p>💎The Diamond Shack</p>
-                <p>Join us for the grand opening of The Diamond Shack, Thursday at 1:00pm.
-                <a>more info ...</a></p>
-            </section>
-            <section id="weather">
-                <h2>Weather</h2>
-                <picture>
-                    <img src="https://openweathermap.org/img/w/01n.png" alt="weather_img">
-                </picture>
-                <div class="weather_info">
-                    <span class="temperature">42°F</span>
-                    <span class="weather_descriptor">Partly Cloudy</span>
-                </div>
-                
-                <div class="weather_chill-speed">
-                    <span>Wind Speed:</span><span class="wind_speed">4 mph</span>
-                    <span>Wind Chill:</span><span class="wind_chill"></span>
-                </div>
-            </section>
+
+    <main id="directory_page">
+
+        <div>
+            <button>
+                Grid<br>
+                view
+            </button>
+            <button>
+                List<br>
+                view
+            </button>
         </div>
-        <section id="news">
-            <h2>News Release</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices. Magna ac placerat vestibulum lectus mauris ultrices eros in cursus. Et malesuada fames ac turpis egestas sed tempus urna et. At augue eget arcu dictum varius.</p>
-        </section>
-        <div class="spotlights">
-            <div class="spotlight">
-                <h2>Thankful Transport</h2>
-                <div><img src="images/moving_truck.png" alt="moving_truck_img"></div>
-                <p class="subtitle"><i>"We get it there for you!"</i></p>
-                
-                <span>hello@thankfultransport.com</span>
-                <br>
-                <span>+999-999-9999 Website</span>
-            </div>
-            <div class="spotlight">
-                <h2>Code Primera</h2>
-                <div><img src="images/code_pencils.webp" alt="code_pencils_img"></div>
-                <p class="subtitle"><i>An after school coding instructional program.</i></p>
-                
-                <span>contact@codeprimera.com</span>
-                <br>
-                <span>+999-999-9999 | Website</span>
-            </div>
-            <div class="spotlight">
-                <h2>Build A Treefort</h2>
-                <div><img src="images/tree_house.webp" alt="tree_house_img"></div>
-                <p class="subtitle"><i>Over 1000 Plans!</i></p>
-                
-                <span>builda@treefort.com</span>
-                <br>
-                <span>+999-999-9999 Website</span>
-            </div>
+        <template>
+            <section>
+                <h2 class="business-name"></h2>
+                <img>
+                <p></p>
+                <p></p>
+                <p><a href=""></a></p>
+            </section>
+        </template>
+        <div class="businesses">
+
         </div>
-        <div id="join">
-            <button type="button">Join Us!</button>
-            <p>Discover how to join the chamber of commerce and how it will 
-                benefit your organization!</p>
-            </div>
+
+
     </main>
-    <footer>
+
+ <footer>
         <a href="index.html">
             <!-- <picture>
                 <source srcset="images/logo.png" media="(min-width:520px) and (max-width:1023px)">
@@ -159,4 +118,6 @@
            </div> 
         </div>-->
     </footer>
+
+
 </body>

@@ -31,7 +31,7 @@ function setSpotlight(spotlight, object){
 }
 async function homepage(){
     const __spotlights = document.querySelectorAll(".spotlight");
-    let URL = "./json/businesses.json"
+    let URL = "./data/businesses.json"
     await fetchData(businessDict, URL)
     let member2 = [];
     let member3 = [];
@@ -84,7 +84,7 @@ async function directoryPage(){
     const __businessTemplate = document.querySelector('template')
     const __businessesDiv = document.querySelector('.businesses')
     const __gridButtons = document.querySelector('#directory_page').querySelectorAll('button')
-    let URL = "./json/businesses.json"
+    let URL = "./data/businesses.json"
     await fetchData(businessDict, URL)
     Object.keys(businessDict).forEach(business => {
         const businessTemplate = __businessTemplate.content.cloneNode(true).children[0]
