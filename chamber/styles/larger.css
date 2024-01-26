@@ -70,6 +70,10 @@
         color: white;
     }
 
+    .navigation li a.current:link, .navigation li a.current:visited {
+        background-color: #005b8d;
+    }
+
     #homepage {
         display: grid;
         grid-template-columns: 25% 50% 25%;
